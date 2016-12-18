@@ -1,0 +1,21 @@
+{
+  "name": "ToDoApp",
+  "version": "0.0.1 beta",
+  "description": "To Do app",
+  "main": "gulpfile.js",
+  "author": "Lukasz Kozak <lukasz.kozak.97@gmail.com>",
+  "license": "MIT",
+  "devDependencies":{
+    "gulp": "*",
+    "gulp-plumber": "*",
+    "gulp-rename": "*",
+    "gulp-sass": "*",
+    "gulp-autoprefixer": "*",
+    "es6-promise": "*",
+    "gulp-csscomb": "*",
+    "gulp-merge-media-queries": "*",
+    "gulp-clean-css": "*",
+    "gulp-uglify": "*",
+    "browser-sync": "*"
+  }
+}

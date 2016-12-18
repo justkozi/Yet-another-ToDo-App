@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,400,700|Open+Sans:300,400,700')
+h1,h2,h3,h4,h5
+    font-family: 'Raleway', sans-serif
+body
+    font-family: "Open Sans", sans-serif
+    display: inline
+*
+    box-sizing: border-box
+
+$td_white: rgba(239, 238, 238, 1)
+$td_green: rgba(73, 156, 81, 1)
+$td_aqua: rgba(149, 249, 227, 1)
+$td_cyan: rgba(41, 115, 115, 1)
+$td_dark: rgba(61, 59, 48, 1)
+$td_yellow: rgba(231, 226, 71, 1)
+
+nav
+    position: fixed
+    width: 100%
+    background-color: $td_cyan
+    color: $td_white
+    //height: 57px
+    box-shadow: 0px 3px 20px 0px rgba(0,0,0,0.5)
+    .title
+        font-family: Raleway, sans-serif
+        font-weight: 700
+        text-align: center
+        font-size: 1.5em
+        padding: 15px
+        margin-right: 40px
+        display: inline-block
+        text-decoration: none
+        color: $td_white
+        text-shadow: 1px 1px 5px rgba(15, 15, 15, 0.5)
+    button
+        width: 37px
+        height: auto
+        border: 2px solid $td_white
+        border-radius: 5px
+        color: $td_white
+        font-size: 1.5em
+        position: absolute
+        top: 12px
+        right: 12px
+        background-color: darken($td_cyan,5)
+
+    ul
+        font-family: 'Open Sans', sans-serif
+        font-weight: 400
+        margin: 0
+        padding: 0
+        list-style: none
+        //background-color: lighten($td_green,3)
+        background-color: darken($td_cyan,5)
+        li
+            text-align: center
+            display: block
+            a
+                font-size: 1em
+                display: block
+                padding: 12px
+                text-decoration: none
+                color: $td_white
+                &:hover,&:active,&:focus
+                    color: lighten($td_white,10)
+                    background-color: lighten($td_cyan,10)
+                i
+                    margin-right: 10px
+.index header
+    background-image: url("../../img/note.jpg")
+    background-size: cover
+    background-position: 10%
+    height: 100vh
+    .invite
+        display: inline-block
+        width: 100%
+        margin-top: 50vh
+        //background-color: rgba(1, 1, 1, 0.50)
+        background-color: rgba(41, 115, 115, 0.6)
+        padding: 15px
+        text-align: center
+        font-family: 'Raleway', sans-serif
+        color: $td_white
+        font-weight: 700
+        font-size: 2em
+        //-webkit-text-stroke: 1px black
+        text-shadow: 1px 1px 5px rgba(15, 15, 15, 0.5)
+        .invite-text
+            padding: 0
+            margin: 0
+        .typed-cursor
+            opacity: 1
+            -webkit-animation: blink 0.7s infinite
+            -moz-animation: blink 0.7s infinite
+            animation: blink 0.7s infinite
+
+        @keyframes blink
+            0%
+                opacity: 1
+            50%
+                opacity: 0
+            100%
+                opacity: 1
+        @-webkit-keyframes blink
+            0%
+                opacity: 1
+            50%
+                opacity: 0
+            100%
+                opacity: 1
+        @-moz-keyframes blink
+            0%
+                opacity: 1
+            50%
+                opacity: 0
+            100%
+                opacity: 1
+
+
+.login
+    form
+        width: 380px
+        margin: 4em auto
+        padding: 3em 2em 2em 2em
+        margin-top: 25vh
+        background: $td_white
+        border: 1px solid darken($td_white,10%)
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 1px 0px, rgba(0, 0, 0, 0.2) 0px 1px 2px 0px
+
+    .group
+        position: relative
+        margin-bottom: 45px
+
+    input
+        font-size: 18px
+        padding: 10px 10px 10px 5px
+        -webkit-appearance: none
+        display: block
+        background: $td_white
+        color: $td_dark
+        width: 100%
+        border: none
+        border-radius: 0
+        border-bottom: 1px solid $td_dark
+        &:focus
+            outline: none
+
+    /* Label
+
+    label
+        color: $td_dark
+        font-size: 18px
+        font-weight: normal
+        position: absolute
+        pointer-events: none
+        left: 5px
+        top: 10px
+        transition: all 0.2s ease
+
+    /* active
+
+    input
+        &:focus ~ label, &.used ~ label
+            top: -20px
+            transform: scale(0.75)
+            left: -2px
+            /* font-size: 14px;
+            color: $td_cyan
+
+    /* Underline
+
+    .bar
+        position: relative
+        display: block
+        width: 100%
+        &:before, &:after
+            content: ''
+            height: 2px
+            width: 0
+            bottom: 1px
+            position: absolute
+            background: $td_cyan
+            transition: all 0.2s ease
+        &:before
+            left: 50%
+        &:after
+            right: 50%
+
+    /* active
+
+    input:focus ~ .bar
+        &:before, &:after
+            width: 50%
+
+    /* Highlight
+
+    .highlight
+        position: absolute
+        height: 60%
+        width: 100px
+        top: 25%
+        left: 0
+        pointer-events: none
+        opacity: 0.5
+
+    /* active
+
+    input:focus ~ .highlight
+        animation: inputHighlighter 0.3s ease
+
+    /* Animations
+
+    @keyframes inputHighlighter
+        from
+            background: $td_cyan
+
+        to
+            width: 0
+            background: transparent
+
+
+    /* Button
+
+    .button
+        position: relative
+        display: inline-block
+        padding: 12px 24px
+        margin: .3em 0 1em 0
+        width: 100%
+        vertical-align: middle
+        color: #fff
+        font-size: 16px
+        line-height: 20px
+        -webkit-font-smoothing: antialiased
+        text-align: center
+        letter-spacing: 1px
+        background: transparent
+        border: 0
+        border-bottom: 2px solid $td_cyan
+        cursor: pointer
+        transition: all 0.15s ease
+        &:focus
+            outline: 0
+
+    /* Button modifiers
+
+    .buttonBlue
+        background: $td_cyan
+        text-shadow: 1px 1px 0 rgba(41, 115, 115, 0.5)
+        &:hover
+            background: lighten($td_cyan,10)
+
+    /* Ripples container
+
+    .ripples
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        overflow: hidden
+        background: transparent
+
+    /* Ripples circle
+
+    .ripplesCircle
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        opacity: 0
+        width: 0
+        height: 0
+        border-radius: 50%
+        background: rgba(255, 255, 255, 0.25)
+
+    .ripples.is-active .ripplesCircle
+        animation: ripples .4s ease-in
+
+    /* Ripples animation
+
+    @keyframes ripples
+        0%
+            opacity: 0
+
+        25%
+            opacity: 1
+
+        100%
+            width: 200%
+            padding-bottom: 200%
+            opacity: 0
+
+footer
+    display: block
+    background-color: $td_cyan
+    width: 100%
+    color: $td_white
+    font-family: Raleway, sans-serif
+    text-align: center
+    font-weight: 400
+    padding: 15px
+    text-shadow: 1px 1px 5px rgba(15, 15, 15, 0.5)
+    a
+        color: $td_white
+        text-decoration: none
+
+
+@media screen and (min-width : 769px)
+    .index nav
+        .title
+            text-align: left
+            display: inline-block
+        button
+            display: none
+        ul
+            display: inline-block
+            position: absolute
+            right: 15px
+            height: 57px
+            background-color: $td_cyan
+            li
+                display: inline-block
+                a
+                    font-size: 1.1em
+                    color: $td_white
+                    background-color: $td_cyan
+                    line-height: 27px
+                    padding: 0
+                    margin-top: 15px
+                    margin-bottom: 15px
+                    padding-left: 5px
+                    padding-right: 5px
+                    border-radius: 10px
+                    &:hover,&:active,&:focus
+                        background-color: lighten($td_cyan,10)

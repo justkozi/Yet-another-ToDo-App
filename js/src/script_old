@@ -1,0 +1,39 @@
+$(document).ready(function() {
+    $(".navbar button").click(function () {
+        togglemenu();
+    })
+
+        if ($(window).width() > 769){
+            $(".navbar ul").css("display","inline-block");
+        }else{
+            $(".navbar ul").css("display","block").hide();
+        }
+    $(window).resize(function(){
+        if ($(window).width() > 769){
+            $(".navbar ul").css("display","inline-block");
+        }else{
+            $(".navbar ul").css("display","block").hide();
+            $(".navbar button i").removeClass("fa-times").addClass("fa-bars");
+        }
+    });
+
+        if($(".invite-text")){
+            $(".invite-text").typed({
+                strings: ["Twórz notatki...", "Bądź bardziej produktywny...","Już nidy nie zapomnisz o zadaniach..."],
+                typeSpeed: 50,
+                startDelay: 500,
+                backDelay: 3000,
+                backSpeed: 50,
+                loop: true,
+                shuffle: true
+            });
+        }
+} );
+function togglemenu() {
+    $(".navbar ul").slideToggle();
+    if ($(".navbar button i").hasClass("fa-bars")){
+        $(".navbar button i").removeClass("fa-bars").addClass("fa-times");
+    }else{
+        $(".navbar button i").removeClass("fa-times").addClass("fa-bars");
+    }
+}
