@@ -20,16 +20,18 @@ Pierwszy krok zatem to:
 ├───js -> Pliki odpowiedzialne za javascript strony
 │   ├───dist -> Skompilowane pliki *.min.js oraz biblioteki js
 │   │   │───app.min.js -> Główny skompilowany plik js odpowiedzalny za AJAX
-│ 	    └───script.min.js -> Główny skomilowawny plik, zawiera pozostałe funkcje js
+│ 	│   └───script.min.js -> Główny skomilowawny plik, zawiera pozostałe funkcje js
 │   └───src -> Folder z plikami *.js, kompilowanymi poprzez gulp'a
 │       │───app.js -> plik js odpowiedzalny za zapytania AJAX oraz tworzenie struktury
-│	 	└───script.js -> plik, zawiera pozostałe funkcje js
+│	 	    └───script.js -> plik, zawiera pozostałe funkcje js
+│
 ├───css -> Pliki odpowiedzialne za stylowanie strony
 │   ├───dist -> Skompilowane pliki *.css oraz frameworki
 │   │   └───main.min.css -> Główny skompilowany plik stylów
 │   ├───fonts  -> Folder z plikami wymaganymi przez FontAwesome
 │   └───src -> Folder z plikami *.sass, kompilowanymi poprzez gulp'a
 │       └───main.sass -> Główny plik, który jest kompilowany na main.min.css
+│
 ├─── ajax 
 │   └─── todo.php -> kontroler zapytań AJAX'owych, zwraca wyniki do zapytań
 ├───includes -> Folder z głównymi plikami *.php
