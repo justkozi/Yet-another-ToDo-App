@@ -18,7 +18,7 @@
 ├───js -> Pliki odpowiedzialne za javascript strony
 │   ├───dist -> Skompilowane pliki *.min.js oraz biblioteki js
 │   │   │───app.min.js -> Główny skompilowany plik js odpowiedzalny za AJAX
-│	│	└───script.min.js -> Główny skomilowawny plik, zawiera pozostałe funkcje js
+│ 	└───script.min.js -> Główny skomilowawny plik, zawiera pozostałe funkcje js
 │   └───src -> Folder z plikami *.js, kompilowanymi poprzez gulp'a
 │       │───app.js -> plik js odpowiedzalny za zapytania AJAX oraz tworzenie struktury
 │	 	└───script.js -> plik, zawiera pozostałe funkcje js
