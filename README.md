@@ -4,6 +4,7 @@
 * Autor: [Łukasz Kozak](mailto:lukasz.kozak.97@gmail.com)
 * Przyczna powstania: Projekt zaliczeniowy na przedmiot Aplikacje internetowe w Zespole Szkoł Komunikacji *(data oddania: grudzień 2016)*
 * Strona z prezentacją: [todo-zsk.tk](http://todo-zsk.tk/)
+
 ## Instrukcja instalacji:
 * Do automatyzacji zadań (minimalizowanie plików, kompilacja sass->css itp.) używany jest [gulp](http://gulpjs.com/). Pierwszy krok zatem to: 
 ```$ npm install ```,
