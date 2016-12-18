@@ -7,7 +7,6 @@
 
 ## Instrukcja instalacji:
 * Do automatyzacji zadań (minimalizowanie plików, kompilacja sass->css itp.) używany jest [gulp](http://gulpjs.com/). Pierwszy krok zatem to:
-
 ```$ npm install ```,
 * Kolejnymi krokami jest uruchomienie gulp'a ```gulp deafault```,
 * Od teraz pliki automatycznie są kompilowane do zmniejszonej wersji a pliki sass są autoprefixowane i łączone do jednego głównego pliku,
