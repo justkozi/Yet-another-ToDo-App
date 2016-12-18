@@ -36,7 +36,7 @@
 │   └───user.php -> Klasa Uzytkownika, sterująca i kontrolująca dane, (kontroler)
 │
 ├───index.php -> Strona główna
-├───app.php -> Główny plika aplikacji, tutaj użytkownik zarządza notatkami
+├───app.php -> Główny plik aplikacji, tutaj użytkownik zarządza notatkami
 ├───login.php -> Podstrona, zawierająca skrypt logowania i rejestracji
 ├───logout -> Skrypt wylogowania (usuwanie sesji)
 ├───package.json -> NodeJS dependencies (glownie gulp)
