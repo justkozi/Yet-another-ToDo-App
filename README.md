@@ -2,11 +2,11 @@
 ## Aplikacja oparta na PHP + AJAX pozwalająca na CRUD notatek. 
 
 * Autor: [Łukasz Kozak](mailto:lukasz.kozak.97@gmail.com)
-* Przyczna powstania: Projekt zaliczeniowy na przedmiot Aplikacje internetowe w Zespole Szkoł Komunikacji *(data oddania: grudzień 2016)*
+* Przyczna powstania: Projekt zaliczeniowy na przedmiot Aplikacje internetowe(IV klasa) w Zespole Szkoł Komunikacji w Poznaniu *(data oddania: grudzień 2016)*
 * Strona z prezentacją: [todo-zsk.tk](http://todo-zsk.tk/)
 
 ## Instrukcja instalacji:
-* Do automatyzacji zadań (minimalizowanie plików, kompilacja sass->css itp.) używany jest [gulp](http://gulpjs.com/). 
+* Do automatyzacji zadań używany jest [gulp](http://gulpjs.com/). 
 Pierwszy krok zatem to:
 ```$ npm install ```,
 * Kolejnymi krokami jest uruchomienie gulp'a ```gulp deafault```,
