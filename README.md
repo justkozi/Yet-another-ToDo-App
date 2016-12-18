@@ -10,7 +10,7 @@
 ```$ npm install ```,
 * Kolejnymi krokami jest uruchomienie gulp'a ```gulp deafault```,
 * Od teraz pliki automatycznie są kompilowane do zmniejszonej wersji a pliki sass są autoprefixowane i łączone do jednego głównego pliku,
-* Konfuguracja bazy danych znajduję się w pliku ```includes/dbh.php```*(tam uzupełniamy informacje o połączeniu z bazą)* należy utworzyć bazę danych a następnie zaimplementować w niej strukturę tabel: ```create_tables.sql```
+* Konfuguracja bazy danych znajduję się w pliku [dbh.php](includes/dbh.php)*(tam uzupełniamy informacje o połączeniu z bazą)* należy utworzyć bazę danych a następnie zaimplementować w niej strukturę tabel: ```create_tables.sql```
 * W razie problemów z uruchomieniem proszę o kontakt: [email](mailto:lukasz.kozak.97@gmail.com).
 
 ## Struktura katalogów i plików
@@ -49,7 +49,7 @@
 ## Użyte biblioteki,frameworki itp.:
 
  * [Gulp](http://gulpjs.com/) - automatyzacja zadań,
- * [FontAwesome](fontawesome.io) - ikonki,
- * [Subtle Patterns](subtlepatterns.com) - Tło z polonezami :D,
- * [Material Ripple](https://github.com/db2k/MaterialRipple) - Elekt ripple przy kliknięciach w menu,
- * [jQuerry](jquery.com) - nie muszę chyba przedstawiać.
+ * [FontAwesome](http://fontawesome.io/) - ikonki,
+ * [Subtle Patterns](http://subtlepatterns.com/) - Tło z polonezami :D,
+ * [Material Ripple](https://github.com/db2k/MaterialRipple/) - Elekt ripple przy kliknięciach w menu,
+ * [jQuerry](http://jquery.com/) - nie muszę chyba przedstawiać.
