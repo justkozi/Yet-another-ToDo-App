@@ -73,7 +73,7 @@ function resolutionCheck() {
 $(function () {
     if($(".invite-text")){
         $(".invite-text").typed({
-            strings: ["Twórz notatki...", "Bądź bardziej produktywny...","Uporządkuj sobie życie...","Już nidy nie zapomnisz o zadaniach...","Dostęp do zadań z każdego miejsca...","Minimalistyczny design.."],
+            strings: ["Twórz notatki...", "Bądź bardziej produktywny...","Uporządkuj sobie życie...","Już nigdy nie zapomnisz o zadaniach...","Dostęp do zadań z każdego miejsca...","Minimalistyczny design.."],
             typeSpeed: 50,
             startDelay: 500,
             backDelay: 3000,
